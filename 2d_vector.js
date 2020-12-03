@@ -37,7 +37,7 @@ Vector2.prototype = {
     return new Vector2(this.x * new_vect.x, this.y * new_vect.y);
   },
 
-  distance function(new_vect){
+  distance: function(new_vect){
     return (((this.x - new_vect.x)**2) + ((this.y - new_vect.y)**2));
   },
 
