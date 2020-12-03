@@ -6,6 +6,12 @@ function Vector2(x,y){
 }
 
 Vector2.prototype = {
+
+  unit: function(){
+    this.x = 1;
+    this.y = 1;
+  }
+
   set: function(x,y){
     this.x = x;
     this.y = y;
@@ -22,4 +28,31 @@ Vector2.prototype = {
   subtract: function(new_vect){
     return new Vector2(this.x - new_vect.x, this.y - new_vect.y);
   }
+
+  scale: function(scalar){
+    return new Vector2(this.x * scalar, this.y * scalar);
+  }
+
+  dot: function(new_vect){
+    return new Vector2(this.x * new_vect.x, this.y * new_vect.y);
+  }
+
+  distance function(new_vect){
+    return (((this.x - new_vect.x)**2) + ((this.y - new_vect.y)**2));
+  }
+
+  magnitude: function(){
+    return Math.sqrt(this.x**2 + this.y**2);
+  }
+
+  magnitudesquare: function(){
+    return this.x**2 + this.y**2;
+  }
+
+  rotate: function(ang){
+    cos = Math.cos(ang);
+    sine = Math.sin
+  }
+
+
 }
