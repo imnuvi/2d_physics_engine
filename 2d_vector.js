@@ -61,3 +61,5 @@ Vector2.prototype = {
 
 
 }
+
+exports.Vector2 = exports = Vector2;
