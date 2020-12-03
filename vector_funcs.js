@@ -51,7 +51,12 @@ Vector2.prototype = {
 
   rotate: function(ang){
     cos = Math.cos(ang);
-    sine = Math.sin
+    sine = Math.sin(ang);
+    final_vector = new Vector2();
+    final_vector.x = this.x * cos - this.y * sine;
+    final_vector.y = this.x * sine + this.y * cos;
+    return final_vector;
+
   }
 
 
